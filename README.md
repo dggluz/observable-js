@@ -1,4 +1,4 @@
-# observable-js
+# obzervable-js
 
 A small *mixin* to make your *objects' constructors* **observable**.
 
@@ -7,7 +7,7 @@ A small *mixin* to make your *objects' constructors* **observable**.
 ## Install
 
 ```bash
-npm install observable-js
+npm install obzervable-js
 ```
 
 -------------------------------
