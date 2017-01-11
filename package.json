@@ -1,8 +1,8 @@
 {
-	"name": "observable-js",
+	"name": "obzervable-js",
 	"version": "1.0.0",
 	"main": "observable.js",
-	"bugs": "https://github.com/dggluz/observable-js/issues",
+	"bugs": "https://github.com/dggluz/obzervable-js/issues",
 	"license": "MIT",
 	"author": {
 		"name": "Gonzalo Gluzman",
@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type" : "git",
-		"url" : "https://github.com/dggluz/observable-js.git"
+		"url" : "https://github.com/dggluz/obzervable-js.git"
 	},
 	"scripts": {
 		"test" : "node_modules/mocha/bin/mocha --ui=tdd tests/all.js"

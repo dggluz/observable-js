@@ -17,7 +17,7 @@ npm install observable-js
 Just *extend* the *mixin* with your favourite method:
 
 ```javascript
-var Observable = require('observable-js');
+var Observable = require('obzervable-js');
 
 var MyObservable = extendWithYourFavouriteMethod(function() {
 	setTimeout(function(that) {
