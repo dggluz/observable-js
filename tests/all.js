@@ -49,7 +49,7 @@
 		assert = chai.assert,
 		expect = chai.expect,
 		should = chai.should(),
-		Observable = require('../observable');
+		Observable = require('../src/observable');
 	chai.use(chaiAsPromised);
 
 	suite('Observable', function() {

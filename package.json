@@ -1,7 +1,7 @@
 {
 	"name": "obzervable-js",
 	"version": "1.0.0",
-	"main": "observable.js",
+	"main": "src/observable.js",
 	"bugs": "https://github.com/dggluz/obzervable-js/issues",
 	"license": "MIT",
 	"description": "A small mixin to make your objects' constructors observable.",
