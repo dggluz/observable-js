@@ -4,6 +4,7 @@
 	"main": "observable.js",
 	"bugs": "https://github.com/dggluz/obzervable-js/issues",
 	"license": "MIT",
+	"description": "A small mixin to make your objects' constructors observable.",
 	"author": {
 		"name": "Gonzalo Gluzman",
 		"email": "dggluz@gmail.com"
