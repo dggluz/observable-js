@@ -1,0 +1,23 @@
+{
+	"name": "observable-js",
+	"version": "1.0.0",
+	"main": "observable.js",
+	"bugs": "https://github.com/dggluz/observable-js/issues",
+	"license": "MIT",
+	"author": {
+		"name": "Gonzalo Gluzman",
+		"email": "dggluz@gmail.com"
+	},
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/dggluz/observable-js.git"
+	},
+	"scripts": {
+		"test" : "node_modules/mocha/bin/mocha --ui=tdd tests/all.js"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"chai": "*",
+		"chai-as-promised": "*"
+	}
+}
