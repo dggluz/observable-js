@@ -22,14 +22,14 @@ module.exports = (function(require) {
 	};
 
 	var Observable = function() {
-		this._observers = [];
 	};
 	Observable.prototype.subscribe = function(event, callback) {
+		this._observers = this._observers || [];
 		this._observers.push(new Observer(event, callback));
 		return this;
 	};
 	Observable.prototype.unsubscribe = function(event, callback) {
-		arrayUtils.removeWhen(this._observers, function(anObserver) {
+		arrayUtils.removeWhen(this._observers || [], function(anObserver) {
 			return anObserver.is(event, callback);
 		});
 		return this;
@@ -37,7 +37,7 @@ module.exports = (function(require) {
 	Observable.prototype._notifyObservers = function(event) {
 		var extraArguments = [].slice.call(arguments, 1);
 
-		this._observers.filter(function(anObserver) {
+		(this._observers || []).filter(function(anObserver) {
 			return anObserver.isListeningForEvent(event);
 		}).forEach(function(anObserver) {
 			anObserver.callWithArguments(extraArguments);

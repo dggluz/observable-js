@@ -164,5 +164,18 @@
 			obs.doSomething();
 			return assert.equal(timesCalled, 1);
 		});
+		test('_notifyObservers doesn\'t brake when no events attached', function() {
+			var obs = new Obs();
+			return assert.doesNotThrow(function() {
+				obs._notifyObservers('something');
+			});
+		});
+		test('Unsubscribe doesn\'t brake when no events attached', function() {
+			var obs = new Obs(),
+				callback = function() {};
+			return assert.doesNotThrow(function() {
+				obs.unsubscribe('something', callback);
+			});
+		});
 	});
 })(require);
